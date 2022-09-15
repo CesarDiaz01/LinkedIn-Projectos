@@ -1,0 +1,13 @@
+public class Caja <T>{
+    T elemento;
+
+    public Caja(T elemento) {
+        this.elemento = elemento;
+    }
+    T obtenerObjeto(){return elemento;
+    }
+
+    <V> boolean perteneceElContenidoALaMismaClase(V otroObjeto){
+        return elemento.getClass() == otroObjeto.getClass();
+    }
+}
